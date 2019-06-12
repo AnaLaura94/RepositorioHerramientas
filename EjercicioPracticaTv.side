@@ -1,0 +1,77 @@
+{
+  "id": "738611b3-ad33-40a6-8aef-8ab8931b780d",
+  "version": "2.0",
+  "name": "EjercicioPracticaTv",
+  "url": "https://www.imdb.com/",
+  "tests": [{
+    "id": "ebc484e1-5a18-4354-9804-348a82cfb94d",
+    "name": "HermanosDeSangre",
+    "commands": [{
+      "id": "050c20a9-a96d-43dc-bd12-05481cca28fb",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.imdb.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce0ad329-9433-4868-bfbd-bc39b9a14754",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1038x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ea4cabda-4afe-45c7-854b-c1758e690000",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=TV",
+      "targets": [
+        ["linkText=TV", "linkText"],
+        ["css=#navTitleMenu a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'TV')]", "xpath:link"],
+        ["xpath=//li[@id='navTitleMenu']/p/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/chart/toptv/?ref_=nv_tp_tv250_2')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'TV')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f33b339-a839-4f0f-84e8-8114f7ab676a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Hermanos de sangre",
+      "targets": [
+        ["linkText=Hermanos de sangre", "linkText"],
+        ["css=tr:nth-child(3) > .titleColumn > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Hermanos de sangre')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/span/div/div/div[3]/table/tbody/tr[3]/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/title/tt0185906/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=12230b0e-0e00-43ed-9e59-8d5353703cce&pf_rd_r=QWK16FQ5PGD7QM78S0M1&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=toptv&ref_=chttvtp_tt_3')])[2]", "xpath:href"],
+        ["xpath=//tr[3]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Hermanos de sangre')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40096f15-4116-41e4-9e1e-4fd98f941a9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//div[@id='title-overview-widget']/div/div[4]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi3629711385?playlistId=tt0185906&ref_=tt_ov_vi')]", "xpath:href"],
+        ["xpath=//div[4]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "62eb4212-03cd-4505-9d12-26e4d0644282",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ebc484e1-5a18-4354-9804-348a82cfb94d"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}
